@@ -30,7 +30,6 @@ inputElement.onchange = (e) => {
     xmlDocTransfo1 = parser.parseFromString(textContent, "text/xml");
     const xslDoc = new XMLHttpRequest();
     xslDoc.open("GET", "estilo.xsl", true);
-    w;
     xslDoc.responseType = "document";
 
     xslDoc.onload = () => {
