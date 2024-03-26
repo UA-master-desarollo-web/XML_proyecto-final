@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT html (head, body)>
+<!ELEMENT head (meta, link)>
+
+<!ELEMENT meta EMPTY>
+<!ELEMENT link EMPTY>
+
+<!ELEMENT body (div+)>
+<!ELEMENT div (h2, h3, h4, p+, section, a )>
+
+<!ELEMENT h2 (#PCDATA)>
+<!ELEMENT h3 (#PCDATA)>
+<!ELEMENT h4 (#PCDATA)>
+<!ELEMENT p (#PCDATA | b)*>
+
+
+<!ELEMENT b (#PCDATA)>
+
+<!ELEMENT section (h5+, br?, img?)>
+<!ELEMENT h5 (#PCDATA)>
+<!ELEMENT br EMPTY>
+<!ELEMENT img EMPTY>
+<!ELEMENT a (#PCDATA)>
+
+
+<!ATTLIST html xmlns CDATA #REQUIRED>
+<!ATTLIST meta http-equiv CDATA #REQUIRED>
+<!ATTLIST meta content CDATA #REQUIRED>
+<!ATTLIST link rel CDATA #IMPLIED>
+<!ATTLIST link type CDATA #IMPLIED>
+<!ATTLIST link href CDATA #IMPLIED>
+<!ATTLIST h4 style CDATA #REQUIRED>
+<!ATTLIST p style CDATA #IMPLIED>
+<!ATTLIST img src CDATA #REQUIRED>
+<!ATTLIST img alt CDATA #IMPLIED>
+<!ATTLIST img height CDATA #IMPLIED>
+<!ATTLIST a href CDATA #REQUIRED>

@@ -1,0 +1,94 @@
+<!ELEMENT rows (row)+>
+<!ATTLIST rows
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT row (documentName,documentDescription,templateType,locality?,
+               marks,web?,(latitudelongitude,latwgs84,lonwgs84)?,
+               municipality,municipalitycode,territory,territorycode,
+               country,countrycode,friendlyUrl,physicalUrl,dataXML,
+               metadataXML,zipFile)>
+<!ATTLIST row
+  xmlns CDATA #FIXED ''
+  num CDATA #REQUIRED>
+
+<!ELEMENT documentName (#PCDATA)>
+<!ATTLIST documentName
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT documentDescription (#PCDATA)>
+<!ATTLIST documentDescription
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT templateType (#PCDATA)>
+<!ATTLIST templateType
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT locality (#PCDATA)>
+<!ATTLIST locality
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT marks (#PCDATA)>
+<!ATTLIST marks
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT web (#PCDATA)>
+<!ATTLIST web
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT latitudelongitude (#PCDATA)>
+<!ATTLIST latitudelongitude
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT latwgs84 (#PCDATA)>
+<!ATTLIST latwgs84
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT lonwgs84 (#PCDATA)>
+<!ATTLIST lonwgs84
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT municipality (#PCDATA)>
+<!ATTLIST municipality
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT municipalitycode (#PCDATA)>
+<!ATTLIST municipalitycode
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT territory (#PCDATA)>
+<!ATTLIST territory
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT territorycode (#PCDATA)>
+<!ATTLIST territorycode
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT countrycode (#PCDATA)>
+<!ATTLIST countrycode
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT friendlyUrl (#PCDATA)>
+<!ATTLIST friendlyUrl
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT physicalUrl (#PCDATA)>
+<!ATTLIST physicalUrl
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT dataXML (#PCDATA)>
+<!ATTLIST dataXML
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT metadataXML (#PCDATA)>
+<!ATTLIST metadataXML
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT zipFile (#PCDATA)>
+<!ATTLIST zipFile
+  xmlns CDATA #FIXED ''>
+
+

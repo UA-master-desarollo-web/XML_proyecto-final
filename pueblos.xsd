@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="rows">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="row"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="row">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="documentName"/>
+        <xs:element ref="documentDescription"/>
+        <xs:element ref="templateType"/>
+        <xs:element minOccurs="0" ref="locality"/>
+        <xs:element ref="marks"/>
+        <xs:element minOccurs="0" ref="web"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="latitudelongitude"/>
+          <xs:element ref="latwgs84"/>
+          <xs:element ref="lonwgs84"/>
+        </xs:sequence>
+        <xs:element ref="municipality"/>
+        <xs:element ref="municipalitycode"/>
+        <xs:element ref="territory"/>
+        <xs:element ref="territorycode"/>
+        <xs:element ref="country"/>
+        <xs:element ref="countrycode"/>
+        <xs:element ref="friendlyUrl"/>
+        <xs:element ref="physicalUrl"/>
+        <xs:element ref="dataXML"/>
+        <xs:element ref="metadataXML"/>
+        <xs:element ref="zipFile"/>
+      </xs:sequence>
+      <xs:attribute name="num" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="documentName" type="xs:string"/>
+  <xs:element name="documentDescription" type="xs:string"/>
+  <xs:element name="templateType" type="xs:NCName"/>
+  <xs:element name="locality" type="xs:string"/>
+  <xs:element name="marks" type="xs:string"/>
+  <xs:element name="web" type="xs:anyURI"/>
+  <xs:element name="latitudelongitude" type="xs:string"/>
+  <xs:element name="latwgs84" type="xs:decimal"/>
+  <xs:element name="lonwgs84" type="xs:decimal"/>
+  <xs:element name="municipality" type="xs:string"/>
+  <xs:element name="municipalitycode" type="xs:string"/>
+  <xs:element name="territory" type="xs:string"/>
+  <xs:element name="territorycode" type="xs:string"/>
+  <xs:element name="country" type="xs:string"/>
+  <xs:element name="countrycode" type="xs:string"/>
+  <xs:element name="friendlyUrl" type="xs:anyURI"/>
+  <xs:element name="physicalUrl" type="xs:anyURI"/>
+  <xs:element name="dataXML" type="xs:anyURI"/>
+  <xs:element name="metadataXML" type="xs:anyURI"/>
+  <xs:element name="zipFile" type="xs:anyURI"/>
+</xs:schema>
