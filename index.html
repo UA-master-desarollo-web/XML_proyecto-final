@@ -68,6 +68,20 @@
       </div>
     </div>
 
+    <div class="row mx-auto">
+      <div class="col-12 p-4 mx-auto">
+        <h1 class="text-center">Pueblos de Euskadi</h1>
+      </div>
+    </div>
+
+    <div class="row mx-auto">
+      <div
+        class="col-12 p-4 mx-auto d-flex justify-content-center align-items-center"
+      >
+        <img src="flag.svg" alt="flag" height="120" class="mx-auto" />
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-6 transform-section">
@@ -112,57 +126,57 @@
         <div class="col-md-6 transform-section">
           <!--Transformación 2 -->
           <h1>Transformación DOM</h1>
-          <div class="container">
-            <div class="row">
-              <div class="col-8">
-                <div
-                  id="result2"
-                  class="alert alert-info"
-                  role="alert"
-                  style="display: none"
-                >
-                  Se ha cargado el archivo con la Transformación 1 realizada.
-                </div>
-                <p>
-                  Esta transformación toma como entrada la salida de la
-                  transformacion XSLT
-                </p>
-                <div class="row">
-                  <div class="col-12">
-                    <div
-                      class="d-flex justify-content-start align-items-center p-2"
+          < class="container">
+
+          <div class="row">
+            <div class="col-8">
+              <div
+                id="result2"
+                class="alert alert-info"
+                role="alert"
+                style="display: none"
+              >
+                Se ha cargado el archivo con la Transformación 1 realizada.
+              </div>
+              <p>
+                Esta transformación toma como entrada la salida de la
+                transformacion XSLT
+              </p>
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="d-flex justify-content-start align-items-center p-2"
+                  >
+                    <button
+                      onclick="transformFromResult()"
+                      id="btnTransform2"
+                      class="btn btn-primary me-2"
+                      disabled
                     >
-                      <button
-                        onclick="transformFromResult()"
-                        id="btnTransform2"
-                        class="btn btn-primary me-2"
-                        disabled
-                      >
-                        Realizar Transformación II
-                      </button>
-                      <button
-                        onclick="downloadFile2()"
-                        id="btnDownload2"
-                        class="btn btn-secondary"
-                        disabled
-                      >
-                        Descargar Archivo
-                      </button>
-                    </div>
+                      Realizar Transformación II
+                    </button>
+                    <button
+                      onclick="downloadFile2()"
+                      id="btnDownload2"
+                      class="btn btn-secondary"
+                      disabled
+                    >
+                      Descargar Archivo
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="row">
-              <div class="col-8">
-                <textarea
-                  id="resultTransform2"
-                  rows="12"
-                  cols="50"
-                  class="result-textarea"
-                ></textarea>
-              </div>
+          <div class="row">
+            <div class="col-8">
+              <textarea
+                id="resultTransform2"
+                rows="12"
+                cols="50"
+                class="result-textarea"
+              ></textarea>
             </div>
           </div>
         </div>
