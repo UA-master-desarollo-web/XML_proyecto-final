@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!ELEMENT rows (row*)>
+    <!ELEMENT row (documentName, documentDescription, country, latwgs84?, lonwgs84?, territory, friendlyUrl)>
+    <!ATTLIST row num CDATA #REQUIRED>
+    <!ELEMENT documentName (#PCDATA)>
+    <!ELEMENT documentDescription (#PCDATA)>
+    <!ELEMENT country (#PCDATA)>
+    <!ELEMENT latwgs84 (#PCDATA)>
+    <!ELEMENT lonwgs84 (#PCDATA)>
+    <!ELEMENT territory (#PCDATA)>
+    <!ELEMENT friendlyUrl (#PCDATA)>
