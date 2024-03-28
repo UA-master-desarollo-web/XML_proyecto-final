@@ -1,0 +1,20 @@
+
+NOMBRES DE LOS INTEGRANTES DEL EQUIPO:
+
+
+-Cesar Fernando Neira Peña - Z1086518A
+-Dayro Alejandro Bonilla Quintero - Z1096111M
+-Maria de los Ángeles Ortega Rivas - Y4896868k
+-Saúl Omar Hernández Gallegos - Z1161191H 
+
+URL DEL VIDEO:
+
+https://www.dropbox.com/scl/fi/2daeksqsbsal8dvi1j5tf/XML.mp4?rlkey=bb3u8xprf2e7y1r1g87w74fns&dl=0
+
+URL DEL PROYECTO EN GITHUB:
+
+https://github.com/UA-master-desarollo-web/XML_proyecto-final
+
+URL DEL PROYECTO EN VERCEL:
+
+https://xml-proyecto-final.vercel.app/
